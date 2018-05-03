@@ -10,8 +10,18 @@ This one is my favourite when asked to get active users from an AD and some usef
 
 
 <h4>locked-user-sources.ps1</h4>
-I wrote this prevent my manager from buying a tool to just do exactly this. Script will parse through AD event logs for a specific user that is having a constant lock-out from AD to let you knwo the past 5 sources that is causing invalid password.
+Script will parse through AD event logs for a specific user that is having a constant lock-out from AD to let you knwo the past 5 sources that is causing invalid password.
 
 
 <h4>verify_services.ps1    get_services.ps1</h4>
 Never got around properly finishing this. This was for old servers for which we need to check after a restart/update that all services are running especially during maintenance when you have your monitoring turned off, this might comes in handy. First run <strong>get_services.ps1</strong> - give it a list of servers in plain text, it will grab all the service states and save it in the running directory. After the maintenance, you can run <strong>verify_services.ps1</strong> to run a sanity check to make sure all the services that were running are still in the running state.
+
+
+<h4>Send_Email.ps1</h4>
+If you want ot massively send emails with just using powershell. You need to make sure IP of your server is in your SPF record if you have an external mail routing host, or if you have an internal relay host, then white list the IP of the server. Otherwise, you might get rejected, or end in spam
+
+
+<h4>get-installed-software-version.ps1</h4>
+If you don't have an asset management software, this should come in handy to grab a vendor installed software and version. You can modify and get more info, or wrap it in a for-loop powered csv import to do a bulk.
+
+
