@@ -10,7 +10,7 @@ This one is my favourite when asked to get active users from an AD and some usef
 
 
 <h4>locked-user-sources.ps1</h4>
-I wrote this prevent my manager from buying a tool to just do exactly this. Script will parse through AD event logs for a specific user that is having a constant lock-out from AD to let you knwo the past 5 sources that is causing invalid password.
+Script will parse through AD event logs for a specific user that is having a constant lock-out from AD to let you knwo the past 5 sources that is causing invalid password.
 
 
 <h4>verify_services.ps1    get_services.ps1</h4>
